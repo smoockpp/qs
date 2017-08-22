@@ -1,0 +1,46 @@
+// Web fonts
+
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-semibold.ttf');
+    font-weight: $semibold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-light.ttf');
+    font-weight: $lighter;
+    font-style: normal;
+  }
+}
+
+// Text
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+// Transitions
+
+@mixin transition($attr) {
+  -webkit-transition: ease-in-out, $attr .5s ease-in-out;
+  -moz-transition: ease-in-out, $attr .5s ease-in-out;
+  -o-transition: ease-in-out, $attr .5s ease-in-out;
+  transition: ease-in-out, $attr .5s ease-in-out;
+}

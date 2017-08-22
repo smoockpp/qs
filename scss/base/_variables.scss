@@ -1,0 +1,41 @@
+// Descriptive color variables
+
+$white          : #fff;
+$black          : #000;
+$black-mat      : #18181a;
+$white-gold     : #f4f4f4;
+$redish         : #db4830;
+
+
+// Functional color variables
+
+
+$color-text-white   : $white;
+$color-text-base    : $black;
+
+
+$color-link-default : $black;
+$color-link-visited : $black;
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-open-sans  : 'Open Sans', $stack-sans-serif;
+
+// Font variables
+
+$semibold	: 600;
+$lighter	: 400;
+
+// Asset paths
+
+$path-img  : '../img';
+$path-font : '../fonts';
+$file	   : 'opensans';
+
+
+// Media queries breakpoints
+$brk-tablets     : '(min-width: 480px)';
+$brk-narrow      : '(min-width: 768px)';
+$brk-wide     	 : '(min-width: 1024px)';
+$brk-full-width  : '(min-width: 1440px)';

@@ -1,0 +1,18 @@
+.navbar {
+    font-family: 'Lato', sans-serif;
+    background-color: $black-mat;
+    height: 70px;
+    .navbar-brand {
+        color: $white;
+    }
+}
+
+#page-navbar {
+    .navbar-nav {
+        .nav-item {
+            a {
+                color: $white;
+            }
+        }
+    }
+}

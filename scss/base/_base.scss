@@ -1,0 +1,45 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  @include text(1em, 1.5, $color: $white);
+  font-family: $stack-open-sans;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 1440px;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Pseudo-classes ------------------ */
+
+a {
+  &:link {
+    color: $color-link-default;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $color-link-default;
+  }
+  &:hover {
+    color: rgba($color-link-default, .5);
+  }
+}

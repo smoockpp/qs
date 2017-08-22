@@ -1,0 +1,69 @@
+.page-heading {
+    padding: 1rem .5rem .5rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: $redish;
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+}
+
+.page-subheading {
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.page-heading-main {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    max-width: 600px;
+    padding: 3rem .3rem .4rem;
+    // border-bottom: 2px solid $white;
+    font-size: 2.5rem;
+    @media (min-width: 992px) {
+        padding: 3rem .3rem .4rem;
+        font-size: 4rem;
+    }
+}
+
+p {
+    margin: .5rem 0 .5rem 1rem;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.1rem;
+    color: lighten($black, 40%);
+}
+
+.phone {
+    position: relative;
+    font-weight: bold;
+    bottom: 1px;
+}
+
+.black {
+    color: $black;
+}
+
+.redish {
+    color: $redish;
+    &:visited {
+        color: $redish;
+    }
+    &:focus {
+        color: $redish;
+    }
+    &:link {
+        color: $redish;
+        font-weight: bold;
+    }
+}
