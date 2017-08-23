@@ -8,9 +8,9 @@ $(document).ready(function () {
             xfbml: true,
             version: 'v2.10'
         });
-        FB.getLoginStatus(function (response) {
-            statusChangeCallback(response);
-        });
+        // FB.getLoginStatus(function(response) {
+        //     statusChangeCallback(response);
+        // });
         FB.AppEvents.logPageView();
         // $('#loginbutton,#feedbutton').removeAttr('disabled');
         // FB.getLoginStatus(updateStatusCallback);
