@@ -124,7 +124,7 @@ p {
         display: inline-block; } }
   @media (min-width: 768px) {
     #page-navbar {
-      position: absolute;
+      position: fixed;
       right: 30px;
       top: 10px;
       display: inline-block; } }
