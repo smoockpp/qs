@@ -35,6 +35,9 @@ a:hover {
   color: rgba(0, 0, 0, 0.5); }
 
 /* Header starts here */
+#policy {
+  padding-top: 7rem; }
+
 .page-heading {
   padding: 1rem .5rem .5rem;
   text-align: left;
