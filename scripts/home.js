@@ -11,7 +11,7 @@ $(document).ready(function() {
         FB.AppEvents.logPageView();
         // $('#loginbutton,#feedbutton').removeAttr('disabled');
         // FB.getLoginStatus(updateStatusCallback);
-        FB.api('/503457173353795', {access_token: '503457173353795|d13bc5fd011232eeaa4b5da6b720a2e4' ,message: 'something'}, function(response) {
+        FB.api('/503457173353795/feed', {access_token: '503457173353795|d13bc5fd011232eeaa4b5da6b720a2e4' ,message: 'something'}, function(response) {
             if (!response || response.error) {
               console.error('Error occured:' + JSON.stringify(response.error));
             } else {
