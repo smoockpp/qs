@@ -116,13 +116,13 @@ p {
       padding: 10px 15px; }
       #page-navbar .navbar-nav .nav-item a {
         color: #fff; }
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         #page-navbar .navbar-nav .nav-item {
           display: inline-block; } }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       #page-navbar .navbar-nav {
         display: inline-block; } }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     #page-navbar {
       position: absolute;
       right: 30px;
@@ -195,7 +195,7 @@ header {
   @media (min-width: 579px) {
     #overlap-container {
       margin: auto; } }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     #overlap-container {
       bottom: 130px; } }
 
