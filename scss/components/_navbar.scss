@@ -16,7 +16,8 @@
 
 #page-navbar {
     z-index: 9999;
-    position: relative;
+    position: fixed;
+    width: 100%;
     top: 70px;
     .navbar-nav {
         background-color: $black-mat;

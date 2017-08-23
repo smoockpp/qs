@@ -108,7 +108,8 @@ p {
 
 #page-navbar {
   z-index: 9999;
-  position: relative;
+  position: fixed;
+  width: 100%;
   top: 70px; }
   #page-navbar .navbar-nav {
     background-color: #18181a; }
