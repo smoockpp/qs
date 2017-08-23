@@ -126,6 +126,7 @@ p {
   @media (min-width: 768px) {
     #page-navbar {
       position: fixed;
+      width: auto;
       right: 30px;
       top: 10px;
       display: inline-block; } }
