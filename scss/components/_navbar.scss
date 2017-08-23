@@ -25,15 +25,15 @@
             a {
                 color: $white;
             }
-            @media (min-width: 769px) {
+            @media (min-width: 768px) {
                 display: inline-block;
             }
         }
-        @media (min-width: 769px) {
+        @media (min-width: 768px) {
             display: inline-block;
         }
     }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
         position: absolute;
         right: 30px;
         top: 10px;
