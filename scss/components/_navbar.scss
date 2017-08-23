@@ -6,13 +6,37 @@
         color: $white;
     }
 }
+.navbar-dark .navbar-toggler {
+    color: $white;
+    border-color: $white;
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
 
 #page-navbar {
+    z-index: 9999;
+    position: relative;
+    top: 70px;
     .navbar-nav {
+        background-color: $black-mat;
         .nav-item {
+            padding: 10px 15px;
             a {
                 color: $white;
             }
+            @media (min-width: 769px) {
+                display: inline-block;
+            }
         }
+        @media (min-width: 769px) {
+            display: inline-block;
+        }
+    }
+    @media (min-width: 769px) {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        display: inline-block;
     }
 }
