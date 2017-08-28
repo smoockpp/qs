@@ -1,0 +1,24 @@
+#services-container {
+    position: relative;
+    .page-heading {
+        width: auto;
+        font-size: 1.8rem;
+        &:after {
+            position: absolute;
+            left: 50%;
+            top: 55px;
+            height: 5px;
+            transform: translateX(-50%);
+        }
+    }
+    .justify-content-center {
+        padding-top: 3rem;
+        .page-subheading {
+            line-height: 3;
+            font-weight: normal;
+            font-size: 1.4rem;
+            text-transform: capitalize;
+        }
+    }
+    padding-bottom: 5rem;
+}

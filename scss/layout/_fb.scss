@@ -1,0 +1,81 @@
+#posts-background {
+    background-color: $black-mat;
+    padding: 3rem 20px;
+    .container {
+        position: relative;
+        > .page-heading {
+            font-size: 1.8rem;
+            width: auto;
+            margin-bottom: 3rem;
+            &:after {
+                position: absolute;
+                left: 50%;
+                top: 55px;
+                height: 5px;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    #posts-container {
+        #posts-carousel {
+            width: 100%;
+            .carousel-caption {
+                position: relative;
+                right: auto;
+                bottom: auto;
+                left: auto;
+                display: block;
+                margin: 2rem auto;
+                width: 80%;
+                height: 280px;
+                @media (min-width: 576px) {
+                    margin-top: 0;
+                }
+            }
+            .carousel-inner {
+                @media (min-width:  576px) {
+                    // overflow: visible;
+                    margin-left: 1px;
+                }
+            }
+            [id^="bg-div-"] {
+                border: 2px solid transparentize($white, .8);
+                &:after {
+                	content: '';
+                	position:absolute;
+                	z-index:-1;
+                	bottom:-3px;
+                	width:94%;
+                	left:50%;
+                	margin-left:-47%;
+                	height:30px;
+                	box-shadow: 0 16px 30px -5px rgba(255, 255, 255, .5);
+                	-webkit-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+                	-moz-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+                	-ms-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+                	-o-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+                	transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+                }
+            }
+            .carousel-control-next, .carousel-control-prev {
+                align-items: flex-end;
+                bottom: 80px;
+                @media (min-width: 576px) {
+                    bottom: 0;
+                }
+            }
+        }
+        .col-sm-6 {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+div[id^="post-image-"] {
+    width: 250px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

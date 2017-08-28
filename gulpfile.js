@@ -21,7 +21,8 @@ function swallowError (error) {
 
 gulp.task('concatScripts', function() {
     return gulp.src([
-          'scripts/home.js'])
+            'scripts/nn-library/nn.js',
+            'scripts/home.js'])
         .on('error', swallowError)
         .pipe(concat('app.js'))
         .pipe(babel({

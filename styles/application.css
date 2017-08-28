@@ -38,6 +38,98 @@ a:hover {
 #policy {
   padding-top: 7rem; }
 
+#posts-background {
+  background-color: #18181a;
+  padding: 3rem 20px; }
+  #posts-background .container {
+    position: relative; }
+    #posts-background .container > .page-heading {
+      font-size: 1.8rem;
+      width: auto;
+      margin-bottom: 3rem; }
+      #posts-background .container > .page-heading:after {
+        position: absolute;
+        left: 50%;
+        top: 55px;
+        height: 5px;
+        transform: translateX(-50%); }
+  #posts-background #posts-container #posts-carousel {
+    width: 100%; }
+    #posts-background #posts-container #posts-carousel .carousel-caption {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      display: block;
+      margin: 2rem auto;
+      width: 80%;
+      height: 280px; }
+      @media (min-width: 576px) {
+        #posts-background #posts-container #posts-carousel .carousel-caption {
+          margin-top: 0; } }
+    @media (min-width: 576px) {
+      #posts-background #posts-container #posts-carousel .carousel-inner {
+        margin-left: 1px; } }
+    #posts-background #posts-container #posts-carousel [id^="bg-div-"] {
+      border: 2px solid rgba(255, 255, 255, 0.2); }
+      #posts-background #posts-container #posts-carousel [id^="bg-div-"]:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: -3px;
+        width: 94%;
+        left: 50%;
+        margin-left: -47%;
+        height: 30px;
+        box-shadow: 0 16px 30px -5px rgba(255, 255, 255, 0.5);
+        -webkit-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+        -moz-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+        -ms-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+        -o-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
+        transform: perspective(800px) rotateY(0deg) rotateX(45deg); }
+    #posts-background #posts-container #posts-carousel .carousel-control-next, #posts-background #posts-container #posts-carousel .carousel-control-prev {
+      align-items: flex-end;
+      bottom: 80px; }
+      @media (min-width: 576px) {
+        #posts-background #posts-container #posts-carousel .carousel-control-next, #posts-background #posts-container #posts-carousel .carousel-control-prev {
+          bottom: 0; } }
+  #posts-background #posts-container .col-sm-6 {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
+div[id^="post-image-"] {
+  width: 250px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#services-container {
+  position: relative;
+  padding-bottom: 5rem; }
+  #services-container .page-heading {
+    width: auto;
+    font-size: 1.8rem; }
+    #services-container .page-heading:after {
+      position: absolute;
+      left: 50%;
+      top: 55px;
+      height: 5px;
+      transform: translateX(-50%); }
+  #services-container .justify-content-center {
+    padding-top: 3rem; }
+    #services-container .justify-content-center .page-subheading {
+      line-height: 3;
+      font-weight: normal;
+      font-size: 1.4rem;
+      text-transform: capitalize; }
+
+#map {
+  height: 500px; }
+
+#logo {
+  max-width: 120px; }
+
 .page-heading {
   padding: 1rem .5rem .5rem;
   text-align: left;
@@ -72,6 +164,15 @@ a:hover {
       padding: 3rem .3rem .4rem;
       font-size: 4rem; } }
 
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
 p {
   margin: .5rem 0 .5rem 1rem;
   font-family: 'Dosis', sans-serif;
@@ -86,6 +187,9 @@ p {
 .black {
   color: #000; }
 
+.white {
+  color: #fff; }
+
 .redish {
   color: #db4830; }
   .redish:visited {
@@ -95,6 +199,20 @@ p {
   .redish:link {
     color: #db4830;
     font-weight: bold; }
+
+.img-responsive {
+  width: 70%;
+  margin: 0 auto 1rem; }
+
+.services-icons {
+  max-width: 100%;
+  max-height: 80px; }
+
+.block {
+  display: block; }
+
+.inline {
+  display: inline-block; }
 
 .navbar {
   font-family: 'Lato', sans-serif;
@@ -155,7 +273,7 @@ header {
   position: relative;
   bottom: 180px;
   padding: 3rem 2rem;
-  margin: 30px;
+  margin: 30px 30px -120px;
   width: auto;
   border-bottom: 5px solid #db4830; }
   #overlap-container:after {
@@ -191,17 +309,22 @@ header {
   #overlap-container .row .col-sm-4 {
     margin-top: 1rem;
     margin-bottom: 1rem; }
+  #overlap-container .row [class^="col-"] {
+    padding-bottom: 2rem; }
   @media (min-width: 400px) {
     #overlap-container {
-      bottom: 300px; } }
+      bottom: 300px;
+      margin-bottom: -250px; } }
   @media (orientation: landscape) {
     #overlap-container {
-      bottom: 50px; } }
+      bottom: 50px;
+      margin-bottom: 0px; } }
   @media (min-width: 579px) {
     #overlap-container {
-      margin: auto; } }
+      margin: 0 auto -0px; } }
   @media (min-width: 768px) {
     #overlap-container {
-      bottom: 130px; } }
+      bottom: 130px;
+      margin-bottom: -80px; } }
 
 /*# sourceMappingURL=application.css.map */
