@@ -66,19 +66,10 @@ document.addEventListener('DOMContentLoaded', function(evt) {
                         }, thisPost);
                         const thisRow = postsContainer.querySelector('#row-' + counter)
                         nn.create({
-                            tag: 'img',
-                            dataAttr: [
-                                {
-                                    attr: 'src',
-                                    value: data.data["0"].media.image.src
-                                },
-                                {
-                                    attr: 'alt',
-                                    value: post.message ? post.message : post.story
-                                }
-                            ],
+                            tag: 'div',
                             id: 'bg-div-' + counter,
-                            className: 'col-sm-6'
+                            className: 'col-sm-6',
+                            inner: `<img class="img-responsive" src="${data.data["0"].media.image.src}" alt="${post.message ? post.message : post.story}">`
                         }, thisRow);
                         let thisPlace;
                         $.ajaxSetup({async: false});
@@ -101,6 +92,10 @@ document.addEventListener('DOMContentLoaded', function(evt) {
                         thisImage.style.height = 'auto';
                         thisImage.style.maxHeight = '250px';
                         thisImage.style.width = '100%';
+                        // console.log(thisImage.querySelector('.img-responsive').getBoundingClientRect().top);
+                        // if (thisImage.querySelector('.img-responsive').getBoundingClientRect().width > thisImage.getBoundingClientRect().width) {
+                        //     console.log(true);
+                        // }
                         // thisImage.style.backgroundPosition = 'center';
                         // thisImage.style.backgroundSize = 'cover';
                         // thisImage.style.position = 'relative';
