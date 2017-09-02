@@ -355,6 +355,9 @@
         <nav class="navbar fixed-top navbar-expand-md navbar-dark">
             <a class="navbar-brand sr-only" href="#">Quick Solutions</a>
             <img id="logo" src="images/logo.png" alt="Quick Solutions logo">
+            <a class="fl-right fb-icon" href="#">
+                <img src="images/icons/fb-white-sm.png" alt="Facebook logo link to Quick Solutions Facebook page.">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page-navbar" aria-controls="page-navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -386,9 +389,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h3 class="page-heading black">why to choose us</h3>
-                        <p class=""><i class="fa fa-check redish"></i> On-site repairs</p>
-                        <p class=""><i class="fa fa-check redish"></i> On-site diagnostics</p>
-                        <p class=""><i class="fa fa-check redish"></i> On-site diagnostics</p>
+                        <p class="inset"><i class="fa fa-check redish"></i> On-site repairs</p>
+                        <p class="inset"><i class="fa fa-check redish"></i> On-site diagnostics</p>
+                        <p class="inset"><i class="fa fa-check redish"></i> On-site diagnostics</p>
                     </div>
                     <div class="col-md-4">
                         <h3 class="page-heading black">how we work</h3>
@@ -411,9 +414,9 @@
                     </div>
                     <div class="col-md-4">
                         <h3 class="page-heading black">get in touch</h3>
-                        <p><i class="fa fa-phone fa-lg redish"></i><a class="phone" href="tel:+447455318061"> +44 7455 318 061</a></p>
-                        <p><i class="fa fa-envelope fa-lg redish"></i><a class="phone" href="mailto:"> enquiries@quick-solutuins.co.uk</a></p>
-                        <p>or use our <a class="redish" href="contact.html">enquiry</a> form.</p>
+                        <p class="inset"><i class="fa fa-phone fa-lg redish"></i><a class="phone" href="tel:+447455318061"> +44 7455 318 061</a></p>
+                        <p class="inset"><i class="fa fa-envelope fa-lg redish"></i><a class="phone" href="mailto:"> enquiries@quick-solutuins.co.uk</a></p>
+                        <p class="inset">or use our <a class="redish" href="contact.html">enquiry</a> form.</p>
                     </div>
                 </div>
             </div>
@@ -425,7 +428,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="row justify-content-center">
                             <div class="col-7 col-sm-8 col-md-9">
-                                <h5 class="page-subheading black ">Car Diagnostics</h5>
+                                <h5 class="page-subheading black center ">Car Diagnostics</h5>
                             </div>
                             <div class="col-5 col-sm-4 col-md-3">
                                 <svg class="services-icons">
@@ -437,7 +440,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="row justify-content-center">
                             <div class="col-7 col-sm-8 col-md-9">
-                                <h5 class="page-subheading black">OBD Diagnostics</h5>
+                                <h5 class="page-subheading black center">OBD Diagnostics</h5>
                             </div>
                             <div class="col-5 col-sm-4 col-md-3">
                                 <svg class="services-icons">
@@ -449,7 +452,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="row justify-content-center">
                             <div class="col-7 col-sm-8 col-md-9">
-                                <h5 class="page-subheading black">Cambelt Service</h5>
+                                <h5 class="page-subheading black center">Cambelt Service</h5>
                             </div>
                             <div class="col-5 col-sm-4 col-md-3">
                                 <svg class="services-icons">
@@ -461,7 +464,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="row justify-content-center">
                             <div class="col-7 col-sm-8 col-md-9">
-                                <h5 class="page-subheading black">Air Conditioners</h5>
+                                <h5 class="page-subheading black center">Air Conditioners</h5>
                             </div>
                             <div class="col-5 col-sm-4 col-md-3">
                                 <svg class="services-icons">
@@ -473,7 +476,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="row justify-content-center">
                             <div class="col-7 col-sm-8 col-md-9">
-                                <h5 class="page-subheading black">Battery Change</h5>
+                                <h5 class="page-subheading black center">Battery Change</h5>
                             </div>
                             <div class="col-5 col-sm-4 col-md-3">
                                 <svg class="services-icons">
@@ -485,7 +488,7 @@
                     <div class="col-sm-6 col-md-4">
                         <div class="row justify-content-center">
                             <div class="col-7 col-sm-8 col-md-9">
-                                <h5 class="page-subheading black">Brakes Check</h5>
+                                <h5 class="page-subheading black center">Brakes Check</h5>
                             </div>
                             <div class="col-5 col-sm-4 col-md-3">
                                 <svg class="services-icons">
@@ -497,22 +500,24 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div id="posts-background" class="container-fluid">
-                <div class="container">
-                    <h3 class="page-heading center">Social Feed</h3>
-                    <div id="rating-container" class="row">
-                    </div>
-                    <div id="posts-container" class="row">
+        <div class="row row-eq-height">
+            <section class="col-xs-12 col-lg-6 no-padding">
+                <div id="posts-background" class="container-fluid">
+                    <div class="container">
+                        <h3 class="page-heading center">Social Feed</h3>
+                        <div id="rating-container" class="row">
+                        </div>
+                        <div id="posts-container" class="row">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div id="map" class="container-fluid">
+            </section>
+            <section class="col-xs-12 col-lg-6 no-padding">
+                <div id="map" class="">
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </div>
         <!-- Fonts -->
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDS04vJjM5REY7aZaKvGArog1C2rEltuk" async></script>

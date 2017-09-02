@@ -35,6 +35,9 @@ a:hover {
   color: rgba(0, 0, 0, 0.5); }
 
 /* Header starts here */
+.no-padding {
+  padding: 0; }
+
 #policy {
   padding-top: 7rem; }
 
@@ -61,9 +64,15 @@ a:hover {
       bottom: auto;
       left: auto;
       display: block;
+      padding-top: 0;
       margin: 2rem auto;
       width: 80%;
       height: 280px; }
+      #posts-background #posts-container #posts-carousel .carousel-caption h5 {
+        color: #e6e6e6; }
+      #posts-background #posts-container #posts-carousel .carousel-caption p {
+        font-size: 14px;
+        color: #b3b3b3; }
       @media (min-width: 576px) {
         #posts-background #posts-container #posts-carousel .carousel-caption {
           margin-top: 0; } }
@@ -71,7 +80,7 @@ a:hover {
       #posts-background #posts-container #posts-carousel .carousel-inner {
         margin-left: 1px; } }
     #posts-background #posts-container #posts-carousel [id^="bg-div-"] {
-      border: 2px solid rgba(255, 255, 255, 0.2); }
+      padding: 0; }
       #posts-background #posts-container #posts-carousel [id^="bg-div-"]:after {
         content: '';
         position: absolute;
@@ -93,6 +102,10 @@ a:hover {
       @media (min-width: 576px) {
         #posts-background #posts-container #posts-carousel .carousel-control-next, #posts-background #posts-container #posts-carousel .carousel-control-prev {
           bottom: 0; } }
+    #posts-background #posts-container #posts-carousel .carousel-indicators li {
+      background-color: #fff; }
+    #posts-background #posts-container #posts-carousel .carousel-indicators .active {
+      background-color: #db4830; }
   #posts-background #posts-container .col-sm-6 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
@@ -125,7 +138,8 @@ div[id^="post-image-"] {
       text-transform: capitalize; }
 
 #map {
-  height: 500px; }
+  height: 100%;
+  min-height: 400px; }
 
 #logo {
   max-width: 120px; }
@@ -173,7 +187,7 @@ div[id^="post-image-"] {
 .right {
   text-align: right; }
 
-p {
+p.inset {
   margin: .5rem 0 .5rem 1rem;
   font-family: 'Dosis', sans-serif;
   font-size: 1.1rem;
@@ -214,6 +228,26 @@ p {
 .inline {
   display: inline-block; }
 
+.row-eq-height {
+  margin-left: 0;
+  margin-right: 0; }
+
+.fl-right {
+  float: right !important;
+  margin-left: auto; }
+
+.fl-left {
+  float: left !important;
+  margin-right: auto; }
+
+.fb-icon {
+  padding-right: 15px;
+  max-height: 42px;
+  display: block; }
+  .fb-icon img {
+    height: 42px;
+    display: block; }
+
 .navbar {
   font-family: 'Lato', sans-serif;
   background-color: #18181a;
@@ -222,10 +256,10 @@ p {
     color: #fff; }
 
 .navbar-dark .navbar-toggler {
-  color: #fff;
-  border-color: #fff; }
+  color: #cccccc;
+  border-color: #cccccc; }
   .navbar-dark .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#ccc' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 #page-navbar {
   z-index: 9999;
@@ -321,7 +355,7 @@ header {
       margin-bottom: 0px; } }
   @media (min-width: 579px) {
     #overlap-container {
-      margin: 0 auto -0px; } }
+      margin: 0 auto -250px; } }
   @media (min-width: 768px) {
     #overlap-container {
       bottom: 130px;
