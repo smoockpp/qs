@@ -138,3 +138,18 @@ p.inset {
         display: block;
     }
 }
+
+.close {
+    border: 1px solid darken($white, 20%) !important;
+    border-radius: 4px;
+    // line-height: inherit;
+    // padding: .5rem !important;
+    height: 40px;
+}
+
+.navbar-close-icon {
+    color: $white;
+    display: block;
+    width: 54px;
+    height: 30px;
+}

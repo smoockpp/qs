@@ -67,7 +67,7 @@ a:hover {
       padding-top: 0;
       margin: 2rem auto;
       width: 80%;
-      height: 280px; }
+      height: 240px; }
       #posts-background #posts-container #posts-carousel .carousel-caption h5 {
         color: #e6e6e6; }
       #posts-background #posts-container #posts-carousel .carousel-caption p {
@@ -84,36 +84,43 @@ a:hover {
       max-width: 100%;
       overflow: hidden; }
       #posts-background #posts-container #posts-carousel [id^="bg-div-"] img {
-        position: absolute;
         top: 0;
         left: 0;
         height: 100%;
+        max-height: 250px;
         width: auto; }
-        #posts-background #posts-container #posts-carousel [id^="bg-div-"] img:after {
-          content: '';
-          position: absolute;
-          z-index: -1;
-          bottom: -3px;
-          width: 94%;
-          left: 50%;
-          margin-left: -47%;
-          height: 30px;
-          box-shadow: 0 16px 30px -5px rgba(255, 255, 255, 0.5);
-          -webkit-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
-          -moz-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
-          -ms-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
-          -o-transform: perspective(800px) rotateY(0deg) rotateX(45deg);
-          transform: perspective(800px) rotateY(0deg) rotateX(45deg); }
     #posts-background #posts-container #posts-carousel .carousel-control-next, #posts-background #posts-container #posts-carousel .carousel-control-prev {
       align-items: flex-end;
       bottom: 80px; }
       @media (min-width: 576px) {
         #posts-background #posts-container #posts-carousel .carousel-control-next, #posts-background #posts-container #posts-carousel .carousel-control-prev {
+          align-items: center; } }
+      @media (min-width: 991px) {
+        #posts-background #posts-container #posts-carousel .carousel-control-next, #posts-background #posts-container #posts-carousel .carousel-control-prev {
+          align-items: flex-end;
           bottom: 0; } }
+    @media (min-width: 576px) {
+      #posts-background #posts-container #posts-carousel .carousel-control-prev {
+        margin-left: -60px; } }
+    @media (min-width: 991px) {
+      #posts-background #posts-container #posts-carousel .carousel-control-prev {
+        margin-left: 0; } }
+    @media (min-width: 576px) {
+      #posts-background #posts-container #posts-carousel .carousel-control-next {
+        margin-right: -60px; } }
+    @media (min-width: 991px) {
+      #posts-background #posts-container #posts-carousel .carousel-control-next {
+        margin-right: 0; } }
     #posts-background #posts-container #posts-carousel .carousel-indicators li {
       background-color: #fff; }
     #posts-background #posts-container #posts-carousel .carousel-indicators .active {
       background-color: #db4830; }
+    @media (min-width: 576px) {
+      #posts-background #posts-container #posts-carousel .carousel-indicators {
+        bottom: 80px; } }
+    @media (min-width: 991px) {
+      #posts-background #posts-container #posts-carousel .carousel-indicators {
+        bottom: 10px; } }
   #posts-background #posts-container .col-sm-6 {
     padding-top: 3rem;
     padding-bottom: 3rem; }
@@ -256,6 +263,17 @@ p.inset {
     height: 42px;
     display: block; }
 
+.close {
+  border: 1px solid #cccccc !important;
+  border-radius: 4px;
+  height: 40px; }
+
+.navbar-close-icon {
+  color: #fff;
+  display: block;
+  width: 54px;
+  height: 30px; }
+
 .navbar {
   font-family: 'Lato', sans-serif;
   background-color: #18181a;
@@ -368,5 +386,8 @@ header {
     #overlap-container {
       bottom: 130px;
       margin-bottom: -80px; } }
+  @media (orientation: landscape) {
+    #overlap-container {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=application.css.map */

@@ -70,4 +70,7 @@
         margin-bottom: -80px;
 
     }
+    @media (orientation: landscape) {
+        margin-bottom: 0;
+    }
 }
